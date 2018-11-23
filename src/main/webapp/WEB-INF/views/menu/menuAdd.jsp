@@ -57,7 +57,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                     <li><a href="#" class="hidden-phone visible-tablet visible-desktop" role="button">设置</a></li>
                     <li id="fat-menu" class="dropdown">
                         <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="icon-user"></i>${user.username}
+                            <i class="icon-user"></i>${login_user.username}
                             <i class="icon-caret-down"></i>
                         </a>
 
@@ -126,7 +126,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				    </div>
 			      </c:if>
             <div class="page-header" ></div>
-            <form action="<%=basePath %>menu.do?flag=addMenu" method="post" class="form-horizontal"  enctype="multipart/form-data" >    
+            <form action="<%=basePath %>menu?flag=addMenu" method="post" class="form-horizontal"  enctype="multipart/form-data" >    
             <div class="row-fluid">
                <div class="span7">  	
 					<div class="control-group">
@@ -178,7 +178,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                </div>
                <div class="form-actions">
 								<button type="submit" class="btn btn-primary">添 加</button>
-								<a href="<%=basePath %>menu.do?flag=menu">
+								<a href="<%=basePath %>menu?flag=menu">
 								<button  class="btn">返 回</button>
 							  </a>
 				</div>
